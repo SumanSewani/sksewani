@@ -1,0 +1,27 @@
+Description:
+In this assignment we need to format the date entered by user and convert it into a standard format. The Date of birth conversion script should take dates in following four formats: YYYYMMDD, YYYY/MM/DD YYYY-MM-DD, and YYYY.MM.DD and return the entered date in a mmm d, yyyy, where mmm is three letter abbreviated months name, d is day of the month and yyyy is four-digit year. If user enters, 19951229 the script will return Dec 29,1995.
+
+
+ALGORITHM FOR ASSIGNMENT :
+
+	1.	Take the first data item from the user (either YYYYMMDD, YYYY/MM/DD, YYYY-MM-DD, or YYYY.MM.DD).
+	2.	Check if user entered correct argument
+
+		a.	Verify the number of arguments entered by the user. If it s more than one exit the program and return an error message suggesting the user to enter a valid argument.
+		b.	Remove all the non-digits characters /, -, .. Thus, the data will be in YYYYMMDD format.
+
+	3.	Extract the year, month, and day from the input data and store it in three separate variables year, month, and date, respectively.
+
+	4.	Validate the input data using a function called validate this function will take date, month and year as input and return true or false if: 
+		a.	The value of month entered is less than 12.
+		b.	The year entered is greater than or equal to 1900.
+		c.	Date of birth should not be greater than present date.
+		d.	Checks if year entered is a leap year so that we can verify date for the month of February.
+		e.	The date entered is not greater than the maximum number of days in that month.
+
+		If the return value is false it will print an error message suggesting the user to change the input value. If true it will execute the next command in the __main__ function.
+
+	5.	Convert the 2-digit month to a three-letter name for the given month. 
+
+	6.	Rearrange the year, month, and day into the required format: mmm d, yyyy; where mmm is one of Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec.
+
