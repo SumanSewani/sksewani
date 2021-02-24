@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+#Author ID: sksewani
 def operate(number1,number2,operator):
 	if operator == 'add':
 		return number1+number2
